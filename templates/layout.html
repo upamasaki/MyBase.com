@@ -9,8 +9,11 @@
     <meta name="author" content="Hau Nguyen">
     <meta name="keywords" content="au theme template">
 
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ url_for('static',filename="assets/img/apple-icon.png") }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static',filename="assets/img/favicon.png") }}">
+
     <!-- Title Page-->
-    <title>Dashboard</title>
+    <title>MyBase</title>
 
     <!-- Fontfaces CSS-->
     <link href="static/assets/css/font-face.css" rel="stylesheet" media="all">
@@ -32,6 +35,7 @@
 
     <!-- Main CSS-->
     <link href="static/assets/css/theme.css" rel="stylesheet" media="all">
+    <link href="static/assets/css/demo.css" rel="stylesheet" media="all">
 
 </head>
 
@@ -42,8 +46,8 @@
             <div class="header-mobile__bar">
                 <div class="container-fluid">
                     <div class="header-mobile-inner">
-                        <a class="logo" href="static/assets/index.html">
-                            <img src="images/icon/logo.png" alt="CoolAdmin" />
+                        <a class="logo" href="index.html">
+                          <img src="/static/images/pic01.png" alt="pic01">
                         </a>
                         <button class="hamburger hamburger--slider" type="button">
                             <span class="hamburger-box">
@@ -57,7 +61,7 @@
                 <div class="container-fluid">
                     <ul class="navbar-mobile__list list-unstyled">
                         <li class="has-sub">
-                            <a class="js-arrow" href="static/assets/#">
+                            <a class="js-arrow" href="static/assets/aaaa">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                             <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                                 <li>
@@ -157,8 +161,8 @@
         <!-- MENU SIDEBAR-->
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
-                <a href="static/assets/#">
-                    <img src="images/icon/logo.png" alt="Cool Admin" />
+                <a href="static/assets/#" class="mybase_logo">
+                    MyBase
                 </a>
             </div>
             <div class="menu-sidebar__content js-scrollbar1">
@@ -166,7 +170,7 @@
                     <ul class="list-unstyled navbar__list">
                         <li class="active has-sub">
                             <a class="js-arrow" href="static/assets/#">
-                                <i class="fas fa-tachometer-alt"></i>Dashboard</a>
+                                <i class="fas fa-tachometer-alt"></i>Coordinate一覧</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
                                     <a href="static/assets/index.html">Dashboard 1</a>
@@ -184,78 +188,17 @@
                         </li>
                         <li>
                             <a href="static/assets/chart.html">
-                                <i class="fas fa-chart-bar"></i>Charts</a>
+                                <i class="fas fa-chart-bar"></i>ページA</a>
                         </li>
                         <li>
                             <a href="static/assets/table.html">
-                                <i class="fas fa-table"></i>Tables</a>
+                                <i class="fas fa-table"></i>ページB</a>
                         </li>
                         <li>
                             <a href="static/assets/form.html">
-                                <i class="far fa-check-square"></i>Forms</a>
+                                <i class="far fa-check-square"></i>ページC</a>
                         </li>
-                        <li>
-                            <a href="static/assets/calendar.html">
-                                <i class="fas fa-calendar-alt"></i>Calendar</a>
-                        </li>
-                        <li>
-                            <a href="static/assets/map.html">
-                                <i class="fas fa-map-marker-alt"></i>Maps</a>
-                        </li>
-                        <li class="has-sub">
-                            <a class="js-arrow" href="static/assets/#">
-                                <i class="fas fa-copy"></i>Pages</a>
-                            <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                <li>
-                                    <a href="static/assets/login.html">Login</a>
-                                </li>
-                                <li>
-                                    <a href="static/assets/register.html">Register</a>
-                                </li>
-                                <li>
-                                    <a href="static/assets/forget-pass.html">Forget Password</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="has-sub">
-                            <a class="js-arrow" href="static/assets/#">
-                                <i class="fas fa-desktop"></i>UI Elements</a>
-                            <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                <li>
-                                    <a href="static/assets/button.html">Button</a>
-                                </li>
-                                <li>
-                                    <a href="static/assets/badge.html">Badges</a>
-                                </li>
-                                <li>
-                                    <a href="static/assets/tab.html">Tabs</a>
-                                </li>
-                                <li>
-                                    <a href="static/assets/card.html">Cards</a>
-                                </li>
-                                <li>
-                                    <a href="static/assets/alert.html">Alerts</a>
-                                </li>
-                                <li>
-                                    <a href="static/assets/progress-bar.html">Progress Bars</a>
-                                </li>
-                                <li>
-                                    <a href="static/assets/modal.html">Modals</a>
-                                </li>
-                                <li>
-                                    <a href="static/assets/switch.html">Switchs</a>
-                                </li>
-                                <li>
-                                    <a href="static/assets/grid.html">Grids</a>
-                                </li>
-                                <li>
-                                    <a href="static/assets/fontawesome.html">Fontawesome Icon</a>
-                                </li>
-                                <li>
-                                    <a href="static/assets/typo.html">Typography</a>
-                                </li>
-                            </ul>
-                        </li>
+
                     </ul>
                 </nav>
             </div>
@@ -288,7 +231,7 @@
     </script>
 
     <!-- Main JS-->
-    <script src="js/main.js"></script>
+    <script src="static/assets/js/main.js"></script>
 
 </body>
 
