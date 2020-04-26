@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<div class="content">
+  <div class="row">
+    <div class="col-md-8">
+      <div class="card card-user">
+        <div class="card-header">
+          <h5 class="card-title">{{ itemRef["item_name"] }}</h5>
+        </div>
+        <div class="card-body">
+          <hr>
+          <!-- IMAGE -->
+          <img  class=" lazyloaded" alt="Item Image" src="{{ itemRef['item_img_url'] }}">
+
+          <!-- OWNER -->
+          <hr>
+          出品者 : {{ itemRef["user_name"] }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

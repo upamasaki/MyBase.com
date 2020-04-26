@@ -1,0 +1,23 @@
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA-QAuE5ziSa5C_cLe5BGC-LWe1IUqb3NY",
+    authDomain: "kangaroo-flask-v1.firebaseapp.com",
+    databaseURL: "https://kangaroo-flask-v1.firebaseio.com",
+    projectId: "kangaroo-flask-v1",
+    storageBucket: "kangaroo-flask-v1.appspot.com",
+    messagingSenderId: "580272520875",
+    appId: "1:580272520875:web:fc8b61d3caef522308c1ee",
+    measurementId: "G-SREN9YBGQE"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
