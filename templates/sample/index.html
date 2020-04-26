@@ -1,0 +1,39 @@
+<!-- メニューとかを引っ張ってくるよ．ここに代入するイメージじゃなくて，Layout.htmlをベースにするイメージだね． -->
+{% extends "layout.html" %}
+
+
+{% block body %}
+<div class="content">
+  <div class="row">
+
+    {% for i in message['firebase_get'] %}
+    <div class="col-lg-3 col-md-6 col-sm-6">
+      <div class="card card-stats">
+        <div class="card-body ">
+          <!-- i = itemName -->
+          <a href="/ItemDetail/{{i}}">{{i}}</a>
+          <hr>
+          {% if 'item_img_url' in message['firebase_get'][i] %}
+          <img  class=" lazyloaded" alt="Item Image" src="{{message['firebase_get'][i]['item_img_url']}}">
+          {% else %}
+          <img  class=" lazyloaded" alt="Not Image" src="https://res.cloudinary.com/aichi-prefectural-university/image/upload/v1585403152/not_Image_r2xuqj.png">
+          {% endif %}
+        </div>
+        <div class="card-footer ">
+          <hr>
+          <div class="stats">
+            {{message['firebase_get'][i]['item_usage']}}
+          </div>
+          <hr>
+          <div class="stats">
+            {{message['firebase_get'][i]['user_name']}}
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+
+  </div>
+
+</div>
+{% endblock %}
