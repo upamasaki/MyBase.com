@@ -1,4 +1,18 @@
 .mybase_logo{
     font-size:26px;
-    font-family:sans-serif;
+    font-family: 'Bitter'
+}
+
+.pic3 img{
+	border-radius: 10px;
+}
+
+.pic2 {
+	padding: 0px;
+}
+
+.pic3 {
+    text-align:center;
+    vertical-align: middle;
+    border-radius: 10px;
 }
